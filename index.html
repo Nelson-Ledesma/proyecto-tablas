@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Multiplicar</title>
+</head>
+<link rel="stylesheet" href="/style.css">
+<body>
+    <h1>¡Practica las Tablas de Multiplicar!</h1>
+    
+    <div class="select-table">
+        <label for="tableSelect">Selecciona una tabla: </label>
+        <select id="tableSelect" onchange="generateQuestion()">
+            <option value="0">Aleatoria</option>
+            <option value="1">Tabla del 1</option>
+            <option value="2">Tabla del 2</option>
+            <option value="3">Tabla del 3</option>
+            <option value="4">Tabla del 4</option>
+            <option value="5">Tabla del 5</option>
+            <option value="6">Tabla del 6</option>
+            <option value="7">Tabla del 7</option>
+            <option value="8">Tabla del 8</option>
+            <option value="9">Tabla del 9</option>
+            <option value="10">Tabla del 10</option>
+        </select>
+    </div>
+
+    <div class="options">
+        <button class="option-button" onclick="checkAnswer(this)"></button>
+        <button class="option-button" onclick="checkAnswer(this)"></button>
+        <button class="option-button" onclick="checkAnswer(this)"></button>
+        <button class="option-button" onclick="checkAnswer(this)"></button>
+    </div>
+    
+    <div class="question" id="question"></div>
+    <div class="feedback" id="feedback"></div>
+
+    <script src="/script.js"></script>
+    <footer>
+        <p> Página creada con fines didácticos
+            desarrollado por Nelson Ledesma</p>
+        Derechos reservados &COPY; 2024
+       
+    </footer>
+</body>
+</html>
